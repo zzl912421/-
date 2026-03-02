@@ -1,0 +1,12 @@
+py中的数据库配置修改test_data_manager.py中的数据库配置（MYSQL_CONFIG/REDIS_CONFIG）为实际测试环境
+
+实例:
+from test_data_manager import TestDataManager
+
+# 初始化管理器
+data_manager = TestDataManager()
+# 创建测试数据
+user = data_manager.create_test_user()
+# 执行测试逻辑...
+# 清理数据
+data_manager.clean_all_data()
